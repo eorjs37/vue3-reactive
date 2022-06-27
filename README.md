@@ -1,4 +1,4 @@
-# vue3-lifecycle
+# vue3-reactive
 
 ## watch
 > ref에서 선언한 데이터를 감시하는 역할을 한다  
