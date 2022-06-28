@@ -52,7 +52,4 @@ export default {
 </script>
 
 <style scoped>
-.home{
-  border: 1px solid #000;
-}
 </style>

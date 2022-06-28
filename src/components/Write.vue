@@ -1,6 +1,6 @@
 <template>
   <h1>
-    Write
+    Write.vue
   </h1>
   <h2>
     props data : {{ title }}

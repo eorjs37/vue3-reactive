@@ -18,8 +18,4 @@ export default {
 </script>
 
 <style>
-.app{
-  border: 1px solid #eee;
-  padding: 10px;
-}
 </style>
