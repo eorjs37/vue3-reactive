@@ -1,21 +1,14 @@
 <template>
   <div class="app">
-    <h1>
-      App.vue
-    </h1>
-    <Home></Home>
+    <router-view></router-view>
   </div>
   
 </template>
 
 <script>
-import home from '@/pages/Home.vue';
 import { onMounted } from 'vue';
 export default {
   name: 'App',
-  components:{
-    'Home':home
-  },
   setup(){
     onMounted(()=>{
       

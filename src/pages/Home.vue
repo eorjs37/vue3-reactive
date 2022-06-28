@@ -5,19 +5,29 @@
     </h1>
     <input type="text" v-model="text"> <br>
     <label for="textCount">텍스트길이: </label>{{ textCount }}
+    <Write :title="childData" @input="childData = $event"></Write>
   </div>
 </template>
 
 <script>
 import { ref, watch, watchEffect } from 'vue';
+import Write from '@/components/Write.vue';
 export default {
+  components:{
+    Write,
+  },
   setup(){
     const text = ref('');
     const textCount = ref(0);
+    const childData = ref('parent data');
 
     /*================= function =================*/
     const getTextCount = () =>{
       return text.value.length;
+    }
+
+    const getData = (data) =>{
+      childData.value = data
     }
 
     /*================= watch =================*/
@@ -33,7 +43,9 @@ export default {
 
     return{
       text,
-      textCount
+      textCount,
+      childData,
+      getData
     }
   }
 }

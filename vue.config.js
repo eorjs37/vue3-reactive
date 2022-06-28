@@ -9,5 +9,6 @@ module.exports = defineConfig({
       .set('@',path.resolve(__dirname,'src/'))
       .set('@/router',path.resolve(__dirname,'src/router'))
       .set('@/pages',path.resolve(__dirname,'src/pages'))
+      .set('@/components',path.resolve(__dirname,'src/components'))
   }
 })
