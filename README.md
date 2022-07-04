@@ -119,3 +119,20 @@ export default {
   }    
 </style>
 ```
+
+
+
+## 🚍 lifecycle
+
+
+### onBeforeMount
+> Dom접근은 불가능하나 ref으로 선언된 데이터 접근은 가능하다.
+### onMount 
+> Dom접근과 ref으로 선언된 데이터 접근은 가능하다.
+
+### onUpdated
+> ref으로 선언된 데이터가 변경될때마다 렌더링 된다.
+
+### 부모 => 자식 lifecycle 과정
+
+> 부모 onBeforeMount => 자식 onBeforeMount => 자식 Mounted => 부모 Mounted
